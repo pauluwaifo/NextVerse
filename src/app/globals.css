@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-[var(--background)] text-[var(--foreground)];
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.slide-up {
+  animation: slideUp 3s ease-in-out infinite;
+}
+
+.custom_scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.custom_scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+/* Handle */
+.custom_scrollbar::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.custom_scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@layer base {
+  * {
+    @apply border-[var(--border)];
+  }
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)];
+  }
+
+  /* Default light mode settings */
+  :root {
+    --background: #000000; /* Black background */
+    --foreground: #ffffff; /* White text */
+    --border: #ffffff; /* White border */
+    --card: #000000; /* Black card */
+    --card-foreground: #ffffff; /* White card text */
+    --primary: #ffffff; /* White primary */
+    --primary-foreground: #000000; /* Black text for primary */
+    --secondary: #1a1a1a; /* Darker secondary */
+    --secondary-foreground: #ffffff; /* White text for secondary */
+    --muted: #333333; /* Muted gray */
+    --muted-foreground: #b0b0b0; /* Lighter gray for muted text */
+    --accent: #1a1a1a; /* Dark accent */
+    --accent-foreground: #ffffff; /* White accent text */
+    --destructive: #ff0000; /* Red for destructive */
+    --destructive-foreground: #ffffff; /* White destructive text */
+    --input: #333333; /* Dark input background */
+    --ring: #ffffff; /* White ring color */
+    --radius: 0.5rem; /* Rounded corners */
+  }
+
+  /* Override for dark mode (when dark class is active) */
+  .dark {
+    --background: #000000; /* Black background */
+    --foreground: #ffffff; /* White text */
+    --card: #000000; /* Black card */
+    --card-foreground: #ffffff; /* White card text */
+    --primary: #ffffff; /* White primary */
+    --primary-foreground: #000000; /* Black text for primary */
+    --secondary: #1a1a1a; /* Darker secondary */
+    --secondary-foreground: #ffffff; /* White text for secondary */
+    --muted: #333333; /* Muted gray */
+    --muted-foreground: #b0b0b0; /* Lighter gray for muted text */
+    --accent: #1a1a1a; /* Dark accent */
+    --accent-foreground: #ffffff; /* White accent text */
+    --destructive: #ff0000; /* Red for destructive */
+    --destructive-foreground: #ffffff; /* White destructive text */
+    --input: #333333; /* Dark input background */
+    --ring: #ffffff; /* White ring color */
+  }
+}

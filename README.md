@@ -1,25 +1,36 @@
-🚀 Next.js Component Projects Showcase
-A collection of advanced component-based projects built entirely with Next.js, showcasing my versatility and passion for creating interactive and intelligent web experiences. Each project is developed with clean, reusable components and modern best practices.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-🌟 Projects Included
-🎭 Mood Detection App
-Uses face recognition models to detect and identify facial expressions, determining a user's current mood in real-time.
+## Getting Started
 
-🌐 3D Experience Interface
-A visually captivating 3D project built with WebGL/Three.js integrated into Next.js to create immersive user interactions.
+First, run the development server:
 
-📦 API Integration Suite
-Demonstrates seamless data fetching and real-time interactions using various third-party APIs with robust state management.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-📁 Drag and Drop Manager
-A smooth and responsive drag-and-drop UI experience for organizing elements or data, built with full accessibility in mind.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-🛠️ Tech Stack
-Framework: Next.js (App Router)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Languages: TypeScript, JavaScript
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Styling: Tailwind CSS
+## Learn More
 
-Libraries: TensorFlow.js / face-api.js (for mood detection), Three.js (for 3D), Axios / SWR (for API handling), DnD libraries
+To learn more about Next.js, take a look at the following resources:
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
