@@ -15,7 +15,7 @@ const shuffleArray = (array: number[]) => {
   return [...array].sort(() => Math.random() - 0.5);
 };
 
-function PuzzleGame() {
+const PuzzleGame = () => {
   const [pieces, setPieces] = useState(() => shuffleArray(originalOrder));
   const [isSolved, setIsSolved] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);

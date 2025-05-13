@@ -81,7 +81,7 @@ export const Details: React.FC<Props> = ({ data, setDisplayDetails }) => {
   );
 };
 
-function DogPhotoGallery() {
+const DogPhotoGallery = () => {
   const API_KEY = process.env.NEXT_PUBLIC_DOG_API_KEY;
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [data, setData] = useState<any>(null);

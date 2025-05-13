@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import Weather from "@/components/apps/weather";
-import Recipe from "@/components/apps/recipe";
-import DogPhotoGallery from "@/components/apps/dog_photo_gallery";
-import FaceAuth from "@/components/apps/face_auth";
-import InteractiveCube from "@/components/apps/interactive_cube";
-import DraggableList from "@/components/apps/drag&drop";
+import Weather from "../components/apps/weather";
+import Recipe from "../components/apps/recipe";
+import DogPhotoGallery from "../components/apps/dog_photo_gallery";
+import FaceAuth from "../components/apps/face_auth";
+import InteractiveCube from "../components/apps/interactive_cube";
+import DraggableList from "../components/apps/drag&drop";
 
 export default function page() {
   return (
