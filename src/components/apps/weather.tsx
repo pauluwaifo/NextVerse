@@ -14,7 +14,7 @@ import {
   LoaderCircle,
 } from "lucide-react";
 
-export default function Weather() {
+function Weather() {
   const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
   const [city, setCity] = useState<string>("");
   const [data, setData] = useState<any>(null);
@@ -196,3 +196,4 @@ export default function Weather() {
     </div>
   );
 }
+export default Weather;

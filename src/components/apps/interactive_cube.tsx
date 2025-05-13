@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Vector3 } from "three";
 
-export default function InteractiveCubeGame() {
+ function InteractiveCubeGame() {
   return (
     <div className="rounded-xl h-[450px] w-[270px] w-full bg-black relative">
       <Canvas shadows camera={{ position: [0, 6, 10] }}>
@@ -135,3 +135,5 @@ function TouchControls() {
     </div>
   );
 }
+
+export default InteractiveCubeGame;

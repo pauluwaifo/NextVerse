@@ -15,7 +15,7 @@ const shuffleArray = (array: number[]) => {
   return [...array].sort(() => Math.random() - 0.5);
 };
 
-export default function PuzzleGame() {
+function PuzzleGame() {
   const [pieces, setPieces] = useState(() => shuffleArray(originalOrder));
   const [isSolved, setIsSolved] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -110,3 +110,4 @@ export default function PuzzleGame() {
     </div>
   );
 }
+export default PuzzleGame;

@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Prompt from "../text_slide";
 import Link from "next/link";
-export default function Recipe() {
+function Recipe() {
   const [data, setData] = useState<any>(null);
   const [recipeDetails, setRecipeDetails] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -140,3 +140,4 @@ export default function Recipe() {
     </div>
   );
 }
+export default Recipe;
