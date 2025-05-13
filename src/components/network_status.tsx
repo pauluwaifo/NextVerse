@@ -6,7 +6,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "../components/ui/tooltip";
 
 export default function NetworkStatus() {
   const [isOnline, setIsOnline] = useState<boolean>(false);
